@@ -11,7 +11,7 @@ function Book(author, title, pageNum, status) {
 
 function changeStatus() {
     let status = document.querySelector(`#bookstatus${this.id}`)
-    status.innerHTML = "Status: Read";
+    status.innerHTML = "Read";
 }
 
 function removeBook() {
