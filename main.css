@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+:root {
+    --dark: #102940;
+    --light: #edf4fb;
+    --blue: #4992d3;
+    --lightblue: #c2dbf0;
+    --darkblue: #1a456b;
+
+}
+.container {
+    width: 100%;
+    height: 100vh;
+}
+.topbar {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark);
+    border-bottom: 2px solid white;
+}
+.logoContainer {
+    padding-left: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.logoContainer h1 {
+    padding-left: 20px;
+}
+.logo {
+    width: 100px;
+}
+.toolbar {
+    padding-right: 60px;
+    display: flex;
+    gap: 40px;
+}
+.maincontent {
+    height: 85%;
+    width: 100%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+.maincontent {
+    display: flex;
+    background-color: white;
+}
+.popup {
+    width: 500px;
+    border: 2px solid black;
+    border-radius: 12px;
+    box-shadow: 4px 3px 3px gray;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    padding: 30px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    background-color: white;
+}
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    gap: 20px
+}
+.buttons button {
+    padding: 12px 35px;
+    border-radius: 18px;
+    border: none;
+    background-color: var(--darkblue);
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+}
+h2 {
+    padding-bottom: 20px;
+}
+h3 {
+    padding-bottom: 10px;
+}
+.field {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.field select {
+    padding-left: 10px;
+    width: 183px;
+    height: 25px;
+    background-color: white;
+    border: 1px solid black;
+    text-align: start;
+}
+.field input {
+    padding-left: 10px;
+    width: 183px;
+    height: 25px;
+}
+#books {
+    display: flex;
+    padding: 40px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.card {
+    width: 320px;
+    height: 250px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 12px;
+    box-shadow: 4px 3px 3px gray;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    padding-bottom: 0;
+}
+#buttonContainer {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 0;
+    justify-content: space-evenly;
+}
+.removeBtn, .readBtn {
+    padding: 10px 20px;
+    border-radius: 18px;
+    background-color: var(--darkblue);
+    color: white;
+    border: 2px solid white;
+    font-size: 14px;
+    font-weight: bolder;
+    width: 120px;
+}
+#add {
+    padding: 10px 40px;
+    border-radius: 18px;
+    border: none;
+    background-color: var(--dark);
+    border: 2px solid white;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    transition: background-color .4s;
+}
+button:hover {
+    cursor: pointer;
+}
+#add:hover {
+    background-color: white;
+    color: black;
+}
+.cardField {
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+}
+.cardLabel {
+    font-weight: bolder;
+} 
